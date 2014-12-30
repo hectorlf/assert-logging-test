@@ -1,3 +1,12 @@
+subprojects {
+   apply plugin: 'java'
+
+   tasks.withType(JavaCompile) {
+      sourceCompatibility = '1.5'
+      targetCompatibility = '1.5'
+   }
+}
+
 // Gradle wrapper task
 // Only used when in need to reinstall the wrapper
 task wrapper(type: Wrapper) {
